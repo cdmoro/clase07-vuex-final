@@ -1,0 +1,29 @@
+Movimientos
+<b-button :disabled="cargando" variant="primary" @click="fetch_movimientos">Actualizar movimientos</b-button>
+<b-button :disabled="cargando" variant="info" @click="RESET_MOVIMIENTOS">Estado anterior</b-button>
+
+<b-card v-show="cargando" class="text-center">Cargando movimientos</b-card>
+
+data
+cargando: false
+
+methods
+buscarMovimientos() {
+    this.cargando = true
+    this.fetch_movimientos().then(() => {
+            this.cargando = false
+        })
+}
+
+
+store
+
+fetch_movimientos(context) {
+    return axios.get('http://localhost:3004/movimientos')
+    .then(response => {
+        context.commit('PUSH_MOVIMIENTOS', response.data)
+    })
+    .catch(e => {
+        console.error("Error: " + e)
+    })
+}
