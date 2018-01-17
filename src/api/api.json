@@ -1,0 +1,13 @@
+{
+  "movimientos": [
+    { "fecha": "10/05/2017", "detalle": "ART TRAB. CASAS. PARTI.", "importe": 10.15},
+    { "fecha": "15/05/2017", "detalle": "CONTRIB. TRAB. CASAS PARTI.", "importe": 53.5},
+    { "fecha": "01/06/2017", "detalle": "OBRA SOCIAL TRAB. CASAS PARTI.", "importe": 10.54},
+    { "fecha": "05/06/2017", "detalle": "GANANCIAS PERSONAS FISICAS", "importe": 50.5},
+    { "fecha": "06/06/2017", "detalle": "IMPTO.S/BIENES PERSONALES", "importe": 105.51},
+    { "fecha": "10/06/2017", "detalle": "IVA", "importe": 47.5},
+    { "fecha": "11/07/2017", "detalle": "ART TRAB. CASAS. PARTI.", "importe": 487.1},
+    { "fecha": "18/07/2017", "detalle": "CONTRIB. TRAB. CASAS PARTI.", "importe": 4.1},
+    { "fecha": "20/08/2017", "detalle": "IVA", "importe": 23.47}
+  ]
+}
