@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <b-navbar toggleable type="dark" variant="primary">
-      <b-navbar-brand href="#">Clase 08</b-navbar-brand>
+      <b-navbar-brand href="#">{{ title }}</b-navbar-brand>
         <b-navbar-nav>
-          <b-nav-item to="/">Home</b-nav-item>
+          <b-nav-item exact to="/">Home</b-nav-item>
           <b-nav-item to="/saldo">Saldo</b-nav-item>
           <b-nav-item to="/movimientos">Movimientos</b-nav-item>
         </b-navbar-nav>
@@ -17,7 +17,7 @@ export default {
   name: "app",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App"
+      title: "Clase 08"
     };
   }
 };

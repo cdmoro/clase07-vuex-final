@@ -14,7 +14,7 @@ export default new Vuex.Store({
     },
     actions: {
         fetch_movimientos(context) {
-            return axios.get('http://localhost:3004/movimientos')
+            axios.get('http://localhost:3004/movimientos')
             .then(response => {
                 context.commit('PUSH_MOVIMIENTOS', response.data)
             })
